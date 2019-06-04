@@ -8,10 +8,10 @@ On utilise donc les librairies numpy, pandas, matplotlib, seaborn, scipy, statsm
 L'utilisateur a la possibilité d'éxecuter le fichier IPythonNotebook (.ipynb) avec Jupyter Notebook, que l'on retrouve notamment sur la distribution Anaconda.
 Il a aussi la possibilité d'éxécuter le fichier Python (.py) en ligne de commande moyennant le renseignement de certains paramètres:
 
-_arg0: Le nom du script
-_arg1: Le chemin pour accéder au répertoire contenant le fichier de données
-_arg2: le nom du fichier de données
-_arg3: le chemin d'accès pour l'import des librairies (on part du principe que les librairies se situent dans un même répertoire)
+* arg0: Le nom du script
+* arg1: Le chemin pour accéder au répertoire contenant le fichier de données
+* arg2: le nom du fichier de données
+* arg3: le chemin d'accès pour l'import des librairies (on part du principe que les librairies se situent dans un même répertoire)
 
 ```
 python arg0 arg1 arg2 arg3
