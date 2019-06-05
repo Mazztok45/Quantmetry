@@ -63,7 +63,7 @@ data['month'] = data['month'].fillna(data['month'].mode()[0])
 data['day'] = data['day'].fillna(data['day'].mode()[0])
 
 
-# Graphes d'histogramme de la variable 'age'
+# Graphe d'histogramme de la variable 'age'
 plt.figure(figsize=(15,8))
 sns.distplot(data.age.dropna(), bins =30)
 plt.show()
@@ -73,7 +73,7 @@ plt.show()
 print(data.age.dropna().mean(), data.age.dropna().median(), data.age.dropna().mode())
 
 
-# Remplacement des valeurs manquantes par le mode de la série age
+# Remplacement des valeurs manquantes par le mode de la série 'age'
 data['age'] = data['age'].fillna(35)
 
 
@@ -179,7 +179,7 @@ grid_search.best_params_
 # ## Question 2
 
 
-# On utilise les meilleurs paramètres du modèles entraîné avec grid search pour paramétrer de nouveau l'algorithme de forêts aléatoire.
+# On utilise les meilleurs paramètres du modèles entraîné avec grid search pour paramétrer de nouveau l'algorithme de forêts aléatoires.
 # On procède ainsi afin d'utiliser la méthode 'feature_importances'.
 forest = RandomForestClassifier(**grid_search.best_params_)
 forest.fit(X_train, y_train)
@@ -195,7 +195,7 @@ sorted(dic.items(),  key=lambda x: x[1], reverse=True)
 
 # ## Question 3
 
-# Matrice de confusion et calcul des metrics accuracy, precision.
+# Matrice de confusion et calcul des metrics accuracy et precision.
 cm = confusion_matrix(y_test, forest.predict(X_test))
 tn = cm[0][0]
 fp = cm[0][1]
